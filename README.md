@@ -106,4 +106,6 @@ Algunos métodos HashSet:
 
 -int size (): da el número de elementos de un conjunto.
 
--boolean (Object o): elimina el Object o especificado del Set.
+-boolean remove (Object o): elimina el Object o especificado del Set.
+
+-Iterator iterator (): se utiliza para devolver un iterador sobre el elemento en el conjunto.
