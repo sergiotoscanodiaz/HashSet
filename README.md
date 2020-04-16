@@ -48,6 +48,7 @@ Salida:
 --->[null, Apple, Grapes, Fig, Mango, Orange]
 
 Como puede observar, todos los valores duplicados no están presentes en la salida, incluido el valor nulo duplicado.
+Este ejemplo confirma algunas de las características citadas anteriormente.
 
 ***
 
