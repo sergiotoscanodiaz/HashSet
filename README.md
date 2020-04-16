@@ -15,7 +15,7 @@ Puntos a tener en cuenta sobre HashSet:
 
 -El iterador devuelto por esta clase es a prueba de fallos, lo que significa que el iterador arrojará ConcurrentModificationException si HashSet se ha modificado después de la creación del iterador, por cualquier medio, excepto el método de eliminación del iterador.
 
-Ejemplo de HashSet:
+Ejemplos de HashSet:
 
       import java.util.HashSet;
         public class HashSetExample {
@@ -45,14 +45,54 @@ Ejemplo de HashSet:
         }
 
 Salida:
+
 --->[null, Apple, Grapes, Fig, Mango, Orange]
 
 Como puede observar, todos los valores duplicados no están presentes en la salida, incluido el valor nulo duplicado.
 Este ejemplo confirma algunas de las características citadas anteriormente.
+       
+        import java.util.*; 
+  
+            class Test { 
+                public static void main(String[]args) { 
+                
+                    // Añadiendo elementos
+                    HashSet<String> h = new HashSet<String>();
+                    h.add("India"); 
+                    h.add("Australia"); 
+                    h.add("South Africa"); 
+                    h.add("India");// añadiendo un elemento duplicada
+
+                    // Mostrando el HashSet 
+                    System.out.println(h); 
+                    System.out.println("List contains India or not:" + 
+                                       h.contains("India")); 
+
+                    // Eliminando un elemento de HashSet
+                    h.remove("Australia"); 
+                    System.out.println("List after removing Australia:"+h); 
+
+                    //Iterando sobre elementos
+                    System.out.println("Iterating over list:"); 
+                    Iterator<String> i = h.iterator(); 
+                    while (i.hasNext()) 
+                        System.out.println(i.next()); 
+                } 
+            } 
+
+Salida:
+
+--->[South Africa, Australia, India]
+
+--->List contains India or not:true
+
+--->List after removing Australia:[South Africa, India]
+
+--->Iterating over list: South Africa India
 
 ***
 
-Métodos HashSet:
+Algunos métodos HashSet:
 
 -add boolean (Elemento e): Agrega el elemento e a la lista.
 
