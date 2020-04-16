@@ -1,6 +1,6 @@
 # HashSet
 Esta clase implementa a la interfaz Set, respaldada por una tabla hash (en realidad, una instancia de HashMap). 
-No garantiza el orden de iteración del conjunto; en particular, no garantiza que la orden del código se mantendrá constante en el tiempo. Esta clase permite el valor nulo. Esta clase no está sincronizada. Sin embargo, se puede sincronizar explícitamente de esta manera: 
+No garantiza el orden de iteración del conjunto; en particular, no garantiza que el orden del código se mantendrá constante en el tiempo. Esta clase permite el valor nulo. Esta clase no está sincronizada. Sin embargo, se puede sincronizar explícitamente de esta manera: 
 Set s = Collections.synchronizedSet (nuevo HashSet (...));
 
 Puntos a tener en cuenta sobre HashSet:
